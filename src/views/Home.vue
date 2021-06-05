@@ -1,18 +1,22 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <h1>首頁</h1>
+    <div>
+      <router-link to="/tenant-A/">租戶A</router-link>
+    </div>
+    <div>
+      <router-link to="/tenant-B/">租戶B</router-link>
+    </div>
+    <div>
+      <router-link to="/tenant-C/">租戶C</router-link>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 export default defineComponent({
   name: "Home",
-  components: {
-    HelloWorld,
-  },
 });
 </script>
